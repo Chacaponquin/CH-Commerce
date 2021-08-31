@@ -1,0 +1,627 @@
+.upArrow_container>div>div:hover {
+    transform: rotate(90deg) scale(1.1);
+    fill: var(--my-color);
+}
+
+.homeContainer {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#eCommerce_home_container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+    height: 90vh;
+}
+
+#eCommerce_user_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+#eCommerce_about_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+#eCommerce_user_container,
+#eCommerce_about_container {
+    scroll-snap-align: start;
+}
+
+#eCommerce_user_section,
+#eCommerce_about_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+.eCommerceNavBar {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.eCommerce_navBar_options {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.navBar_option {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+}
+
+.eCommerce_home_cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+
+.eCommerce_home_cards::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+}
+
+.eCommerce_home_cards::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--my-color);
+}
+
+.eCommerce_home_card {
+    display: grid;
+    grid-template-rows: 70% 15% 15%;
+    width: 20%;
+    min-width: 170px;
+    height: 40vh;
+    margin: 10px 0px;
+    margin-left: 30px;
+    box-shadow: gray 3px 3px 5px;
+    transition: all 0.4s ease;
+    justify-items: center;
+}
+
+.eCommerce_home_card:hover {
+    transform: scale(1.05);
+}
+
+.home_card_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+}
+
+.eCommerce_home_card h1 {
+    font-size: 16px;
+}
+
+.eCommerce_home_card p {
+    font-weight: 600;
+    color: gray;
+    font-size: 16px;
+}
+
+.home_card_options input {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--my-color);
+    border: var(--my-color);
+    color: white;
+    padding: 4px 0px;
+    outline: none;
+}
+
+.home_card_img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.home_card_img img {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.eCommerce_home_car {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll
+}
+
+.eCommerce_home_car::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+}
+
+.eCommerce_home_car::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--my-color);
+}
+
+.home_car_h1 {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_car_h1_container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    fill: var(--my-color);
+}
+
+.home_car_h1_container h1 {
+    font-size: 42px;
+    color: gray;
+}
+
+.home_car_h1_container>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearCar_section,
+.carP_pay_section {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+}
+
+.clearCar_section input,
+.carP_pay_section input {
+    width: 70%;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--my-color);
+    border: var(--my-color);
+    color: white;
+    padding: 4px 0px;
+    cursor: pointer;
+}
+
+.eCommerce_home_car_select {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 15vh;
+    box-shadow: gray 3px 3px 10px;
+    justify-items: center;
+}
+
+.eCommerce_home_car_select h1 {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.shoppingCar_inf {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    width: 80%;
+    height: 12vh;
+    margin: 15px 0px;
+}
+
+.shoppingCar_inf>h1 {
+    display: flex;
+    align-self: center;
+    font-size: 18px;
+    color: gray;
+}
+
+.eCommerce_select_delete {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.eCommerce_select_delete input {
+    width: 50%;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: var(--my-color);
+    border: var(--my-color);
+    color: white;
+    padding: 4px 0px;
+}
+
+.eCommerce_select_delete p {
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.user_section_partLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--my-color);
+}
+
+.user_section_partLeft img {
+    position: relative;
+    transform: translateX(120px);
+    width: 530px;
+    height: 530px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user_section_partRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.user_information {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 25%);
+    width: 70%;
+    height: 70%;
+}
+
+.user_information_section {
+    display: flex;
+    grid-column: span 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.user_information_section:nth-child(3),
+.user_information_section:nth-child(4) {
+    grid-column: span 1;
+}
+
+.user_information_section h1 {
+    color: gray;
+    font-size: 17px;
+}
+
+.user_information_section p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user_information_section h1,
+.user_information_section p {
+    width: 60%;
+    text-align: left;
+}
+
+.user_information_addProduct {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: span 2;
+}
+
+.user_information_addProduct input {
+    width: 40%;
+    font-size: 20px;
+    font-weight: 600;
+    border: var(--my-color);
+    background-color: var(--my-color);
+    color: white;
+    padding: 10px 0px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: gray 3px 3px 7px;
+}
+
+.about_section_partLeft,
+.about_section_partRight {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+}
+
+.about_section_text h1 {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+}
+
+.about_section_text p {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    text-align: left;
+}
+
+.about_section_partRight {
+    background-color: var(--my-color);
+}
+
+.about_section_partRight img {
+    width: 65%;
+    object-fit: contain;
+    object-position: center;
+    filter: drop-shadow(3px 3px 5px gray);
+}
+
+@media screen and (max-width: 1220px) {
+    .user_section_partLeft img {
+        width: 450px;
+        height: 450px;
+        transform: translateX(70px);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .user_section_partLeft img {
+        width: 400px;
+        height: 400px;
+        transform: translateX(50px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .eCommerce_navBar_options {
+        width: 40%;
+    }
+    .eCommerce_home_cards::-webkit-scrollbar {
+        display: none;
+    }
+    .eCommerce_home_car::-webkit-scrollbar {
+        display: none;
+    }
+    .navBar_option {
+        font-size: 20px;
+    }
+    .home_container {
+        grid-template-columns: 100% !important;
+        grid-template-rows: 80% 20%;
+    }
+    .eCommerce_home_card {
+        height: 32vh;
+        min-width: 170px;
+    }
+    .eCommerce_home_card h1 {
+        font-size: 13px;
+    }
+    .eCommerce_home_card p {
+        font-size: 13px;
+    }
+    .home_card_options input {
+        padding: 3px 0px;
+        font-size: 12px;
+    }
+    .eCommerce_home_car {
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .home_car_h1 {
+        flex-direction: column;
+        width: 170px;
+        min-width: 170px;
+    }
+    .eCommerce_home_car_select {
+        margin-bottom: 0;
+        margin-right: 30px;
+        min-width: 170px;
+        height: 14vh;
+    }
+    .home_car_h1_container h1 {
+        font-size: 35px;
+    }
+    .clearCar_section input,
+    .carP_pay_section input {
+        font-size: 16px;
+    }
+    .shoppingCar_inf {
+        min-width: 140px;
+    }
+    .carP_pay_section {
+        min-width: 170px;
+        padding: 0;
+    }
+    .carP_pay_section input {
+        width: 80%;
+        padding: 8px;
+        font-size: 22px;
+    }
+    .user_section_partLeft img {
+        width: 400px;
+        height: 400px;
+        transform: translateX(40px);
+    }
+    .user_information_section h1,
+    .user_information_section p {
+        width: 75%;
+    }
+    .user_information_addProduct input {
+        font-size: 18px;
+    }
+    .about_section_text h1 {
+        font-size: 50px;
+    }
+    .about_section_text p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .user_section_partLeft img {
+        transform: translateX(0);
+        width: 90%;
+        height: 95%;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .eCommerce_home_car_select {
+        height: 12vh;
+    }
+    .navBar_option {
+        font-size: 18px;
+    }
+    .user_section_partLeft img {
+        transform: translateX(0);
+        width: 90%;
+        height: 95%;
+        border-radius: 5px;
+    }
+    .user_information {
+        width: 80%;
+        height: 55%;
+    }
+    .user_information_section h1,
+    .user_information_section p {
+        width: 90%;
+    }
+    .user_information_section h1 {
+        font-size: 14px;
+    }
+    .user_information_section p {
+        font-size: 17px;
+    }
+    .user_information_addProduct input {
+        font-size: 12px;
+    }
+    .about_section_text {
+        width: 80%;
+        height: 80%;
+    }
+    .about_section_text h1 {
+        font-size: 30px;
+    }
+    .about_section_text p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .eCommerce_navBar_options {
+        width: 50%;
+    }
+    .navBar_option {
+        font-size: 17px;
+    }
+    .eCommerce_home_card {
+        min-width: 140px;
+    }
+    .eCommerce_home_car_select {
+        margin-right: 20px;
+        min-width: 140px;
+    }
+    .eCommerce_home_car_select h1 {
+        width: 90%;
+        font-size: 13px;
+    }
+    .eCommerce_select_delete input {
+        font-size: 12px;
+        padding: 3px;
+    }
+    .user_section_partLeft img {
+        transform: translateX(0);
+        width: 90%;
+        height: 95%;
+        border-radius: 5px;
+    }
+    .user_information_section h1,
+    .user_information_section p {
+        width: 100%;
+    }
+    .user_information_section h1 {
+        font-size: 12px;
+    }
+    .user_information_section p {
+        font-size: 12px;
+    }
+    .user_information_addProduct input {
+        width: 45%;
+        font-size: 10px;
+        border-radius: 3px;
+    }
+    .about_section_text {
+        width: 80%;
+        height: 80%;
+    }
+    .about_section_text h1 {
+        font-size: 30px;
+    }
+    .about_section_text p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .user_information_section h1 {
+        font-size: 10px;
+    }
+    .user_information_section p {
+        font-size: 10px;
+    }
+    .user_information_addProduct input {
+        width: 45%;
+        font-size: 9px;
+        border-radius: 3px;
+    }
+}

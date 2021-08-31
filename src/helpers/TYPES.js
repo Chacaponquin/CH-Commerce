@@ -1,0 +1,5 @@
+export const TYPES = {
+    DELETE_FROM_CAR: "DELETE_FROM_CAR",
+    CLEAR_CAR: "CLEAR_CAR",
+    ADD_TO_CAR: "ADD_TO_CAR",
+};
