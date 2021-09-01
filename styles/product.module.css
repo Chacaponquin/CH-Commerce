@@ -130,6 +130,7 @@
 }
 
 .product_card_description {
+    width: 95%;
     height: 95%;
     padding: 5px;
     justify-self: center;
